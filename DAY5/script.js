@@ -2,19 +2,18 @@ const ele = document.getElementById("para")
 
 //api link for recipes generate
 const url = "https://api.spoonacular.com/recipes/random?apiKey=51b0ac40d2ef47379379226d23827830&includeNutrition"
+const url1 = "https://api.quotable.io/random"
 
-//callback function results in console
-const fetchData = (url, callback)=> {
-    fetch(url)
-      .then(response => response.json())
-      .then(data => callback(data))
-      .catch(error => console.log(error)); 
+//callback function results in console (random quote)
+const fetchData = (url1, callback)=> {
+    fetch(url1)
+    .then(response => response.json())
+    .then(data => callback(data))
+    .catch(error => console.log(error)); 
   }
-  
-  
-  fetchData(url, processData => {
-    
-    console.log(processData.recipes[0]); 
+
+  fetchData(url1, (processData) => {
+    console.log(processData.content ); 
   });
 
 
