@@ -1,0 +1,50 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Roboto&family=Varela+Round&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    background: #323437;
+    color:#646669;
+}
+
+.container
+{
+
+    
+    width: 100%;
+    font-size: 1.2rem;
+    display: flex ;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    
+}
+
+.para   
+{
+    width: 80%;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.head
+{
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    
+}
+img{
+    border-radius: 10px;
+}
