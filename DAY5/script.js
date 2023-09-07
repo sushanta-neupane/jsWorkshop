@@ -1,7 +1,7 @@
 const ele = document.getElementById("para")
 
 //api link for recipes generate
-const url = "https://api.spoonacular.com/recipes/random?apiKey=51b0ac40d2ef47379379226d23827830&includeNutrition"
+const url = "https://api.spoonacular.com/recipes/random?apiKey=1b44a4622345460ba80cbab246bfd1b1&includeNutrition"
 const url1 = "https://api.quotable.io/random"
 
 //callback function results in console (random quote)
