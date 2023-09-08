@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Roboto&family=Varela+Round&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    background: #323437;
+    color:#646669;
+}
+
+
+.head
+{
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: min(120px) repeat(5, 100px);
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+    border-radius: 10px;
+   
+  }
+  
+
+  .AC,.equal {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: #252529;
+    display: flex;
+    border-radius: 10px;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    box-shadow: #cccccc9c 0 0 5px;
+  }
+  
+  .output .operation {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+    background: transparent;
+  }
+  
+  .output .result {
+    background: transparent;
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  button {
+    box-shadow: #cccccc9c 0 0 5px;
+
+
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #323437;
+    outline: none;
+    background-color: #646669;
+    color: #ccc;
+    border-radius: 5px;
+  }
+  
+  button:active {
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
